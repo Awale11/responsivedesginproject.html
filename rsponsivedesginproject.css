@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Anybody", sans-serif;
+    background-color: #dfdfd8;
+}
+
+.container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+img {
+    width: 100%;
+}
+header {
+    background-color: #fafaf6;
+    height: 4.5rem;
+    position: sticky;
+    width: 100%;
+    top: o;
+}
+
+.desktop-menu {
+    height: 100%;
+   /* heightkan  waa 4.5rem oo header-ka 100% qaado demek */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.menus-link {
+    display: flex;
+    gap: 10px;
+}
+.menus-link li {
+    list-style: none;
+}
+.menus-link li a {
+    text-decoration: none;
+    font-size: 1.25rem; 
+    /* here 20px loo qeebiyay 1rem oo 16px ah sonuc=1.25rem */
+    font-weight: 500;
+    color: #2b2b2b;
+    /* bu menularin ilk rengi waye without hover */
+}
+
+.menus-link li a:hover {
+    color: #5f6ad4;
+    /* bu da wa markii mouseka ladulgeeyo colorkan ayay isu badalauyaan */
+}
+.desktop-menu h1 {
+    font-size: 1.5625rem;
+    /* bu da 25px loo qeebiyay 16px= 1.5625rem */
+    font-weight: 700;
+}
+
+.humburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+.mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.btn-primary, .btn-secondary{
+    display: inline-block;
+    background-color: #5f6ad4;
+    padding: 20px;
+    margin: 5px;
+     border-radius: 5px;
+     text-decoration: none;
+     text-align: center;
+     font-size: 1.25rem;
+}
+.btn-secondary {
+    background-color: transparent;
+    /* colorka aad heesato kuso muuqo */
+    border: 1px solid white;
+}
+
+.hero {
+    height: calc(100vh - 4.5rem);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)),
+     url(https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlfGVufDB8fDB8fHww)center / cover no-repeat;
+    display: flex;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    /* 5rem= 80px loo qeebiyay 16px ayuu ka immaday  */
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+
+.btn {
+    /* width: calc(100% - 1.25rem); */
+    padding: 0.9375rem  3.75remrem;
+    font-size: 1.25rem;
+    background-color: #5f6ad4;
+    color: white;
+    border: none;
+    border-radius: 0.625rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fafaf6;
+    color: black;
+}
+
+.yoga {
+    height: 90vh;
+    background: linear-gradient(rgba(154, 150, 150, 0.5), rgba(196, 189, 189, 0.5) ), url(https://images.unsplash.com/photo-1609433861367-c3ab700c51d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8eW9nYSUyMGluJTIwZm9yZXN0fGVufDB8fDB8fHww) center / cover no-repeat;
+    margin-top: 6rem;
+    /* 6rem= 96px loo qeebiyay 16px */
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.yoga .content {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+   max-width: 728px;
+   margin-inline: auto;
+   color: white;
+   margin-bottom: 7rem;
+}
+
+.yoga .content h1 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.yoga .content p {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.info-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin-block: 6rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem; 
+}
+
+.box img {
+    border-radius:15px;
+}
+
+.box h1 {
+    font-size: 1.5625rem;
+    color: #2b2b2b;
+}
+.box p {
+    color: #646464;
+    font-size: 1.25rem;
+}
+
+.prefect-condition {
+    height: 438px;
+     background: linear-gradient(rgba(154, 150, 150, 0.5), rgba(196, 189, 189, 0.5) ), url(https://images.unsplash.com/photo-1573590330099-d6c7355ec595?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8eW9nYSUyMGluJTIwdGhlJTIwc2VhfGVufDB8fDB8fHww) center / cover no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.prefect-condition h2 {
+    font-size: 3.125rem;
+    color: #2b2b2b;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.prefect-condition p {
+    font-size: 1.25rem;
+    color: #2b2b2b;
+    font-weight: 400;
+}
+
+.yoga-video {
+    height: 100vh;
+    margin-block: 2rem;
+}
+.yoga-video h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    
+}
+.yoga-video video {
+    width:90%;
+    height: 200px;
+    border-radius: 25px;
+    display: block;
+    margin: auto;  
+}
+
+.blog-section {
+
+}
+
+.blog-section h1 {
+    text-align: center;
+    font-size: 3.125rem;
+    font-weight: 400;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+}
+.blog-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.blog-cards .card {
+    border-radius: 25px;
+    margin: 5px;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+    border-radius: 25px;
+}
+.card h2 {
+    padding: 1.25rem;
+}
+.card p {
+    padding: 1.25rem;
+
+}
+/* tablets and mobile phones */
+@media(max-width: 768px) {
+    .desktop-menu{
+        display: none;
+    }
+
+    header {
+        height: 0;
+        /* max-width: 90% */
+    }
+
+    i {
+        z-index: 11111;
+        /* bu en cok numaraya sahip olan en gucli odur demek  iki iconic haday is dul fuulan o zaman kullaniriz */
+    }
+
+    .humburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background-color: #5f6ad4;
+        color: white;
+        /* padding: 15px; */
+        width: 50px;
+        height: 50px;
+        top: 10%;
+        right: 5%;
+        border-radius: 50%;
+        font-size: 2rem;
+    }
+    .mobile-menu {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #2b2b2b;
+        color: white;
+        inset: 0 0 0 0;
+    }
+
+    .mobile-menu .navigation {
+        margin-top: 5rem;
+        display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 2rem;
+    }
+
+    .mobile-menu .navigation .menus-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-menu h1 {
+        font-size: 2.3125rem;
+        /* bu 37px denk gelir */
+        font-weight: 700;
+        border-bottom: 1px solid white;
+        /* border-bottom= alt cizgi yapar */
+        padding: 10px;
+    }
+
+    .mobile-menu a {
+        color: white !important;
+    }
+
+    .hero {
+        height: 100vh;
+    }
+
+    .hero h1 {
+        font-size: 3.0625 rem;
+        /* 3.0265rem= 49px loo qeebiyay 16px oradan geliyor */
+    }
+
+    .yoga .content {
+        margin-bottom: 2rem;
+    }
+
+    .yoga .content h1 {
+        font-size: 2.125rem;
+    }
+
+    .yoga .content p {
+        padding: 1rem;
+        font-size: 1.3125rem;
+    }
+
+    .info-boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .prefect-condition h2 {
+    font-size: 2.125rem;
+    }
+    .prefect-condition p {
+        font-size: 1.125rem;
+    }
+}
